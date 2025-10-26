@@ -3,7 +3,7 @@
 Please visit below link for complete detail about creation of this application
 
 ```
-https://edu2skill.wordpress.com/course/react-with-vite-custom-css/run-custom-code-react-vite-customcss/
+https://edu2skill.wordpress.com/course/react-with-vite-custom-css/creating-form-input-fileds-react-vite-customcss/
 ```
 
 <br />
