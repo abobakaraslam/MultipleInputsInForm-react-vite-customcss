@@ -4,8 +4,8 @@ import { useState } from "react";
 function App() {
   //initialize states for all input fields
   const [InputData, setInputData] = useState({
-    userName: "",
-    userAge: 0
+    txtField1: "",
+    numField1: 0
   });
   //function to update values of states when user types
   const onChangeInputData = (event) => {
@@ -17,17 +17,19 @@ function App() {
     event.preventDefault(); //avoid page loading when form is submitted
     console.log("button submitted")
     
-    let userName_get = InputData.userName;
-    console.log("Name entered by User: ",userName_get);
+    let txtField1_get = InputData.txtField1;
+    console.log("txtField1 entered value: ",txtField1_get);
 
-    let userAge_get = InputData.userAge;
-    console.log("Age entered by User: ",userAge_get);
+    let numField1_get = InputData.numField1;
+    console.log("numField1 entered value: ",numField1_get);
   }
   
   return <div>
     <form onSubmit={handleForm}>
-      <input type="text" name="userName" id="userName" value={InputData.userName} onChange={onChangeInputData} placeholder="Name here" />
-      <input type="number" name="userAge" id="userAge" value={InputData.userAge} onChange={onChangeInputData} placeholder="0" />
+      <input type="text" name="txtField1" id="txtField1" value={InputData.txtField1} onChange={onChangeInputData} placeholder="Name here" />
+      <br />
+      <input type="number" name="numField1" id="numField1" value={InputData.numField1} onChange={onChangeInputData} placeholder="0" />
+      <br />
       <button type="submit">Submit</button>
     </form>
   </div>
