@@ -16,8 +16,12 @@ function App() {
   const handleForm = (event)=>{
     event.preventDefault(); //avoid page loading when form is submitted
     console.log("button submitted")
-    console.log("Name entered by User: ",InputData.userName);
-    console.log("Age entered by User: ",InputData.userAge);
+    
+    let userName_get = InputData.userName;
+    console.log("Name entered by User: ",userName_get);
+
+    let userAge_get = InputData.userAge;
+    console.log("Age entered by User: ",userAge_get);
   }
   
   return <div>
